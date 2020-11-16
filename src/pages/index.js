@@ -1,9 +1,11 @@
 import React from "react"
+import HeroSection from "../components/herosection"
 import Logo from "../images/logo-1.png"
 
 export default function Home() {
 	return (
 		<div className="block w-full h-screen block py-3">
+			{/* Header and Navigation */}
 			<div className="flex w-full px-3 py-3 items-center container mx-auto">
 				<img src={Logo} alt="" style={{ width: 180 }} className="m-0" />
 				<span>
@@ -13,12 +15,15 @@ export default function Home() {
 						<li>
 							<a className="font-bold uppercase" href="#">Hello</a>
 						</li>
-						<li>
+						<li>	
 							<a href="#">Hello</a>
 						</li>
 					</ul>
 				</span>
 			</div>
+
+			{/* Hero Section */}
+			<HeroSection />
 		</div>
 		)
 	}

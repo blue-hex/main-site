@@ -11,7 +11,7 @@ const ResearchSection = (props) => {
                     </span>
                     <span className="inline-flex px-3 py-3 flex-col space-y-3 justify-center px-6">
                         <h3 className="text-3xl text-blue-600 text-right">We Research, Design and Develop.</h3>
-                        <p className="font-semibold text-right pl-6 text-indigo-900">We're always learning to adapt new technologies and frameworks to reduce development effort for our projects and save costs for our customers. Our team is equipped to handle the evolving needs of the industry.</p>
+                        <p className="font-base text-right pl-6 text-blue-900">We're always learning to adapt new technologies and frameworks to reduce development effort for our projects and save costs for our customers. Our team is equipped to handle the evolving needs of the industry.</p>
                     </span>
                 </div>
             </div>

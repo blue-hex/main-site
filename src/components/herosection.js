@@ -29,8 +29,8 @@ const HeroSection = (props) => {
                 <span className="flex flex-col justify-center">
                     <span className="inline-block px-3 align-center"> 
                         <h3 className="text-5xl">We're Blue Hex</h3>
-                        <p className="inline-block m-3 ml-0 font-base text-left pr-6" style={{ height: "120px" }}>
-                            We love working on data analytics, CRM, ERP and analytics software. We can help <span className="text-blue-700 font-base" ref={typedElement}></span>
+                        <p className="inline-block m-3 ml-0 text-left pr-6 font-base" style={{ height: "120px" }}>
+                            We love working on data analytics, CRM, ERP and analytics software. We can help <span className="text-blue-700 font-bold" ref={typedElement}></span>
                         </p>
                     </span>
                 </span>

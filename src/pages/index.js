@@ -1,6 +1,7 @@
 import React from "react"
 import HeroSection from "../components/herosection"
 import ResearchSection from "../components/researchsection"
+import OurServicesSection from "../components/ourservices";
 import Logo from "../images/logo-1.png"
 import { Helmet } from "react-helmet";
 
@@ -18,7 +19,7 @@ export default function Home() {
 				<div className="container mx-auto">
 					<div className="flex justify-between">
 						<span className="inline-flex items-center">
-							<img src={Logo} alt="" style={{ width: 84.21 }} className="m-0 p-0" />
+							<img src={Logo} alt="" style={{ width: 128 }} className="m-0 p-0" />
 							<span>
 								<h1 className="text-xl">Blue Hex Software</h1>
 								<p>Enterprise Software Development & IT Consulting</p>
@@ -46,6 +47,7 @@ export default function Home() {
 			{/* Hero Section */}
 			<HeroSection />
 			<ResearchSection />
+			<OurServicesSection />
 		</div>
 		)
 	}

@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Typed from 'typed.js';
-import HeroAppImage from "../images/hero-app-banner.png";
-import HeroIsoTech from "../images/2518593.jpg";
+import HeroIsoTech from "../images/hero-banner.svg";
 
 const HeroSection = (props) => {
 
@@ -24,19 +23,21 @@ const HeroSection = (props) => {
     }, []) 
 
     return (
-        <div className="container mx-auto">
-            <div className="grid grid-cols-2">
-                <span className="flex flex-col justify-center">
-                    <span className="inline-block px-3 align-center"> 
-                        <h3 className="text-5xl">We're Blue Hex</h3>
-                        <p className="inline-block m-3 ml-0 text-left pr-6 font-base" style={{ height: "120px" }}>
-                            We love working on data analytics, CRM, ERP and analytics software. We can help <span className="text-blue-700 font-bold" ref={typedElement}></span>
-                        </p>
+        <div className="container mx-auto" style={{ height: `calc(100vh - 170px)` }}>   
+            <div className="flex h-full items-center">
+                <div className="grid grid-cols-2">
+                    <span className="flex flex-col justify-center items-center">
+                        <span className="inline-block px-3 align-center"> 
+                            <h3 className="text-5xl">We're Blue Hex</h3>
+                            <p className="inline-block m-3 ml-0 text-left pr-6 font-base" style={{ height: "120px" }}>
+                                We love working on data analytics, CRM, ERP and analytics software. We can help <span className="text-blue-700 font-bold" ref={typedElement}></span>
+                            </p>
+                        </span>
                     </span>
-                </span>
-                <span className="">
-                    <img src={HeroIsoTech} alt="" className="shadow-xl rounded-xl" draggable="false" />
-                </span>
+                    <span className="">
+                        <img src={HeroIsoTech} alt="" className="" draggable="false" />
+                    </span>
+                </div>
             </div>
         </div>
     )

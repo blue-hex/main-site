@@ -26,7 +26,7 @@ import Azure from "../images/azure.png";
 const WhyUsSection = () => {
 
     return (
-        <div className="flex w-full h-screen items-center">
+        <div className="block w-full items-center">
             <div className="container mx-auto px-6 py-12">
                 <div className="grid grid-cols-2 gap-3">
                     <div className="flex flex-col pr-16"> 

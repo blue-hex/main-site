@@ -10,14 +10,13 @@ import HR from "../images/hiring.svg";
 
 const OurServices = (props) => {
     return (
-        <div className="flex w-full h-screen" style={{ 
+        <div className="block w-full" style={{ 
             backgroundImage: `url(${TechBG})`, 
             backgroundPosition: 'center center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'
         }}>
             <div className="container mx-auto px-3 pt-3 pb-6">
-
                 <div className="block my-3 text-center">
                     <h3 className="text-2xl">Our Services</h3>
                 </div>

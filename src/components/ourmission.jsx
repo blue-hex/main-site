@@ -4,7 +4,7 @@ import missionVideo from "../images/mission-video.mp4";
 
 const OurMission = (props) => {
     return (
-        <div className="flex w-full bg-black h-screen justify-center items-center" ref={props.missionRef}>
+        <div className="flex w-full bg-black justify-center items-center" ref={props.missionRef}>
             <div className="container mx-auto px-6 py-6">
                 <div className="grid grid-cols-2">
                     <div className="flex flex-col justify-center">

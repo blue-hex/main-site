@@ -1,10 +1,6 @@
-@import "tailwindcss/base";
+@tailwind base;
 
-@import "tailwindcss/components";
+@tailwind components;
 
-.card {
-    backdrop-filter: blur(9px);
-}
-
-@import "tailwindcss/utilities";
+@tailwind utilities;
 

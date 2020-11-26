@@ -24,7 +24,7 @@ const HeroSection = (props) => {
 
     return (
         <div className="container mx-auto" style={{ height: `calc(100vh - 170px)` }}>   
-            <div className="flex h-full items-center">
+            <div className="flex h-full items-center px-6">
                 <div className="grid grid-cols-2">
                     <span className="flex flex-col justify-center items-center">
                         <span className="inline-block px-3 align-center"> 

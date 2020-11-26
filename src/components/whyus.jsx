@@ -20,32 +20,48 @@ import SalesForce from "../images/salesforce.png";
 import AWS from "../images/aws.png";
 import GCP from "../images/gcp.png";
 import Azure from "../images/azure.png";
+import styled from "@emotion/styled";
+
+const HeroHeader = styled.h3`
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -12px; 
+        background-color: #2250fc;
+        width: 5vw;
+        height: 3px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+`;
 
 
-
-const WhyUsSection = () => {
+const WhyUsSection = (props) => { 
 
     return (
-        <div className="block w-full items-center">
-            <div className="container mx-auto px-6 py-12">
-                <div className="grid grid-cols-2 gap-3">
-                    <div className="flex flex-col pr-16"> 
-                        <h3 className="text-4xl">Our Portfolio & Tech Stack</h3>
-                        <span className="space-y-3 mt-6">
+        <div className="block w-full h-full" ref={props.techstackRef}>
+            <div className="container mx-auto px-6 py-12 h-full">
+                <div className="grid grid-cols-2 grid-rows-1 space-x-6 h-full">
+                    <div className="flex flex-col justify-center">
+                        <HeroHeader className="text-4xl mb-3">Our Portfolio & Tech Stack</HeroHeader>
+                        <span className="space-y-3 mt-6 text-sm leading-tight">
                             <p>
                                 We're a team of experienced, passionate and expandable team of developers and domain specialists with a strong background in enterprise software development. 
                             </p>
                             <p>
-                                We've worked on NelsonHall-recognised, highly agile CRMs, HRMS and ERP applications along with intelligent data analytics, insightful dashboard applications and data-driven decision making applications for sales, operations and administration teams.
+                                We've successfully implemented NelsonHall-recognised, highly agile CRMs, HRMS and ERP applications along with intelligent data analytics, insightful dashboard applications and data-driven decision making applications for sales, operations and administration teams.
                             </p>
                             <p>
                                 We've also worked on deploying tours and travel management CRM and intelligent restaurant management POS systems in south-east Asian countries.
                             </p>
                         </span>
                     </div>
-                    <div className="">
+                    <div className="flex flex-col justify-center">
                         {/* <h3>Tech Stack Logos here</h3> */}
-                        <div className="grid md:grid-cols-8 grid-cols-1 gap-6 space-y-3">
+                        <div className="grid md:grid-cols-6 grid-cols-1 grid-rows-2 gap-9 space-y-3 pl-16">
                             <div className="flex flex-col items-center justify-center">
                                 <img src={PHP} alt="" className="w-full m-0" title="PHP" />
                             </div>

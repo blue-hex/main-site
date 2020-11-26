@@ -15,11 +15,13 @@
   },
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.19.26",
+    "@headlessui/react": "^0.2.0",
     "autoprefixer": "^10.0.2",
     "gatsby": "^2.24.79",
     "gatsby-plugin-postcss": "^3.0.3",
     "gatsby-plugin-react-helmet": "^3.5.0",
     "gatsby-plugin-typography": "^2.5.13",
+    "node-waves": "^0.7.6",
     "postcss": "^8.1.9",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -28,6 +30,7 @@
     "react-slick": "^0.27.13",
     "react-typography": "^0.16.19",
     "slick-carousel": "^1.8.1",
+    "styled-components": "^5.2.1",
     "typed.js": "^2.0.11",
     "typography": "^0.16.19",
     "typography-theme-fairy-gates": "^0.16.19"

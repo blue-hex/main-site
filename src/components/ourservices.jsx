@@ -7,69 +7,89 @@ import AppDevelopment from "../images/app-development.svg";
 import UI from "../images/layout.svg"; 
 import POS from "../images/bill.svg"; 
 import HR from "../images/hiring.svg"; 
+import styled from "@emotion/styled";
+
+
+
+const HeroHeader = styled.h3`
+
+    position: relative;
+    text-align: center;
+
+    &:before {
+        content: "";
+        position: absolute;
+        background-color: #2250fc;
+        width: 5vw;
+        height: 2px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: -21px; 
+    }
+`;
 
 const OurServices = (props) => {
     return (
-        <div className="block w-full" style={{ 
-            backgroundImage: `url(${TechBG})`, 
+        <div className="block w-full h-full overflow-scroll" ref={props.servicesRef} style={{ 
+            // backgroundImage: `url(${TechBG})`, 
             backgroundPosition: 'center center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'
         }}>
-            <div className="container mx-auto px-3 pt-3 pb-6">
-                <div className="block my-3 text-center">
-                    <h3 className="text-2xl">Our Services</h3>
+            <div className="container mx-auto px-6 pt-3 pb-6">
+                <div className="block my-12 text-center">
+                    <HeroHeader className="text-3xl">Our Services</HeroHeader>
                 </div>
 
-                <div className="grid grid-cols-3 gap-6">
-                    <div className="card block rounded-2xl shadow-2xl border-b px-6 py-6">
-                        <div className="flex flex-col w-full items-center space-y-2">
-                            <img src={CustomerReview} alt="" className="w-12 h-12 m-0" />
-                            <h3 className="font-bold text-center">CRM & CXM</h3>
-                            <p className="text-xs text-left">Our solutions ranges from custom-tailored CRM/CXM to bringing the entire customer satisfaction processes onto Salesforce, Zendesk or similar tools.</p>
-                        </div>
+                <div className="grid grid-rows-1 grid-cols-3 space-x-3">
+                    <div className="inline-flex flex-col items-center px-6 py-6 space-y-3 bg-purple-500 text-white shadow-xl rounded-xl">
+                        <img src={CustomerReview} alt="CRM/CXM" className="w-12 h-12 m-0" />
+                        <h3 className="text-xl text-white">CRM & CXM</h3>
+                        <p className="text-sm text-center">
+                            Customer engagement and experience management. AI-powered customer experience management suites. SalesForce implementation, management and development.
+                        </p>
                     </div>
-                    <div className="card block rounded-2xl shadow-2xl border-b px-6 py-6">
-                        <div className="flex flex-col w-full items-center space-y-2">
-                            <img src={AppDevelopment} alt="" className="w-12 h-12 m-0" />
-                            <h3 className="font-bold text-center">Enterprise App Development & Cloud Consulting</h3>
-                            <p className="text-xs text-left">Our team delivers advanced applications to manage your B2B, B2C and internal business processes. We love to work with web apps, mobile apps, big data apps and iOS/macOS apps development. We can also help your business go cloud with our dedicated experience in Amazon AWS, Google Cloud Platform and Azure.</p>
-                        </div>
+                    <div className="inline-flex flex-col items-center px-6 py-6 space-y-3 bg-white border-2 border-purple-500 shadow-xl rounded-xl">
+                        <img src={AppDevelopment} alt="App Development" className="w-12 h-12 m-0" />
+                        <h3 className="text-xl">App Development</h3>
+                        <p className="text-sm text-center">
+                            Enterprise applications development, Android and iOS app development, real-time app development, Microsoft .NET applications development and native macOS app development.
+                        </p>
                     </div>
-                    <div className="card block rounded-2xl shadow-2xl border-b px-6 py-6">
-                        <div className="flex flex-col w-full items-center space-y-2">
-                            <img src={UI} alt="" className="w-12 h-12 m-0" />
-                            <h3 className="font-bold text-center">UI/UX, Web Design & E-Commerce</h3>
-                            <p className="text-xs text-left">We love to help your brand go online with our years of experience in WooCommerce and Magento along with delightful UI and highly functional UX.</p>
-                        </div>
+                    <div className="inline-flex flex-col items-center px-6 py-6 space-y-3 bg-blue-500 text-white shadow-xl rounded-xl">
+                        <img src={CustomerReview} alt="CRM/CXM" className="w-12 h-12 m-0" />
+                        <h3 className="text-xl text-white text-center">BlueSense SXM</h3>
+                        <p className="text-sm text-center">
+                            Omnichannel Service Experience Management suite with out-of-box support for WordPress, Drupal, Android, iOS and many other frameworks. All-in-one support and service management for businesses of any size.
+                        </p>
                     </div>
                 </div>
 
-                <div className="grid grid-cols-3 gap-6 mt-6">
-                    <div className="card block rounded-2xl shadow-2xl border-b  px-6 py-6">
-                        <div className="flex flex-col w-full items-center space-y-3">
-                            <img src={AI} alt="" className="w-12 h-12 m-0" />
-                            <h3 className="font-bold text-center">Data Analytics & AI, ML and BI</h3>
-                            <p className="text-xs text-left">We can help drive your business growth using data analytics, pre-processing input datasets required for machine learning models and implement Microsoft Power BI into your firm's existing systems as microservice architecture.</p>
-                        </div>
+                <div className="grid grid-cols-3 space-x-3 my-6"> 
+                    <div className="inline-flex flex-col items-center px-6 py-6 space-y-3 bg-blue-500 text-white shadow-xl rounded-xl">
+                        <img src={CustomerReview} alt="CRM/CXM" className="w-12 h-12 m-0" />
+                        <h3 className="text-xl text-white">BlueSparks AI</h3>
+                        <p className="text-sm text-center">
+                            Discover insights, drive business growth with our data-driven decision making models and orchestrate workflow using predictive models and AI autopilot models.
+                        </p>
                     </div>
-                    
-                    <div className="card block rounded-2xl shadow-2xl border-b px-6 py-6">
-                        <div className="flex flex-col w-full items-center space-y-2">
-                            <img src={POS} alt="" className="w-12 h-12 m-0" />
-                            <h3 className="font-bold">Point-of-Sale ERP</h3>
-                            <p className="text-xs text-left">Our team has developed next generation, SAAS-based point-of-sale system for retail and restaurants which enables enterprises of any size to go digital effordably. </p>
-                        </div>
+                    <div className="inline-flex flex-col items-center px-6 py-6 space-y-3 bg-green-500 text-white shadow-xl rounded-xl">
+                        <img src={AppDevelopment} alt="App Development" className="w-12 h-12 m-0" />
+                        <h3 className="text-xl text-white">POSX Resto-ERP</h3>
+                        <p className="text-sm text-center">
+                            Intelligent Restaurant Inventory Management and cloud-based point-of-sale for growing enterprises. Take advantage of our SAAS-based subscription model to transform your business without burning a hole in the budget.
+                        </p>
                     </div>
-                    
-                    <div className="card block rounded-2xl shadow-2xl border-b px-6 py-6">
-                        <div className="flex flex-col w-full items-center space-y-2">
-                            <img src={HR} alt="" className="w-12 h-12 m-0" />
-                            <h3 className="font-bold text-center">Hiring & On-boarding Management Suite</h3>
-                            <p className="text-xs text-left">Our team is working on intelligent hiring and onboarding experience management suite for firms to efficiently manage talent, onboard employees quickly and measure performance of HR department with ease. Talent data is the new Oil! Get onboard with our HXM ( Hiring eXperience Management) suite and witness exponential growth. </p>
-                        </div>
+                    <div className="inline-flex flex-col items-center px-6 py-6 space-y-3 border-2 border-indigo-500 text-indigo-500 shadow-xl rounded-xl">
+                        <img src={CustomerReview} alt="CRM/CXM" className="w-12 h-12 m-0" />
+                        <h3 className="text-xl text-indigo-500 text-center">Chronos HXM</h3>
+                        <p className="text-sm text-center">
+                            Agile Hiring Experience & On-boarding management suite for growing firms and HR firms to rapidly onboard resources with precise job-description-to-resume match using our AI solution and provide streamlined on-boarding experience.
+                        </p>
                     </div>
                 </div>
+
             </div>
         </div>
     );
